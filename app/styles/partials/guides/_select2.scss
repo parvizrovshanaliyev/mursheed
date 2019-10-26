@@ -1,0 +1,49 @@
+/*Select2 responsive*/
+.select2 {
+    width:100%!important;
+} 
+.select2-selection {
+    overflow: hidden;
+}
+
+.select2-selection__rendered {
+    white-space: normal;
+    word-break: break-all;
+}
+
+// .select2-custom {
+//     outline: none;
+//     width: 100%;
+//     height: 2.25rem;
+//     border: 0;
+//     background: transparent;
+//     font-family: Averta;
+//     font-size: 1rem;
+//     padding: .25rem !important;
+//     color: #666666;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+// }
+.select2-container--default .select2-selection--single{
+    font-family: "Averta-Regular";
+    font-size: 12px;
+    border: 0;
+    background: transparent;
+    height: 2.25rem;
+    padding: .25rem!important;
+}
+.select2-selection__arrow {
+  position: relative;
+}
+// .select2-selection__arrow:after {
+//   content: "keyboard_arrow_down";
+//   font-family: "material icons";
+//   position: absolute;
+//   right: 0.625rem;
+//   top: 50%;
+//   font-size: 1rem;
+//   color: #000000;
+//   transform: translateY(-50%);
+//   pointer-events: none;
+// }

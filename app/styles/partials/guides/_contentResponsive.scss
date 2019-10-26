@@ -1,0 +1,122 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    
+  
+}
+@media (min-width: 768px) {
+
+    
+  
+}
+@media (min-width:768px) {
+
+  #card_image_main_left{
+    flex-direction: row;
+    background: transparent;
+    border: 0;
+  }
+
+  #card_image_main_left .card-main{
+    text-align: left;
+    margin-left: 1rem;
+    align-items: flex-end;
+  }
+
+   #card_image_main_left .card-main .title{
+    font-family: "Averta-Semibold";
+    font-size: $font-size2;
+    font-weight: 600;
+    color: var(--black);
+  }
+  
+   #card_image_main_left .card-main .times-tour{
+    font-family: "Averta-Regular";
+    font-size: $font-size;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: var(--black);
+  }
+
+   #card_image_main_left .card-main .countries {
+    font-family: "Averta-Regular";
+    font-size: $font-size;
+    line-height: 2;
+    letter-spacing: normal;
+    color: var(--black);
+  }
+
+
+
+  #card_star_details_hire  {
+    display: flex;
+    
+    flex-direction: column;
+    // justify-content: space-between;
+    padding: 0;
+    align-items: flex-end;
+    background: transparent;
+    border: 0;
+  }
+
+  #card_star_details_hire .card-button{
+
+    flex-direction: column;
+  }
+
+  #card_star_details_hire .ratings {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  #card_star_details_hire .rating {
+    margin-bottom: 12px;
+  }
+
+  #card_star_details_hire .ratings-count {
+    font-size: 10px;
+  }
+
+  #card_star_details_hire .details__hire {
+
+    width: 120px;
+    height: 29px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Averta-Bold";
+    border: 0;
+    border-radius: 3px;
+  }
+
+  #card_star_details_hire .details {
+    color: $deep-aqua;
+    background-color: #ffffff;
+    border: 1px solid;
+  }
+
+  #card_star_details_hire .hire {
+    color: #ffffff;
+    background-color: $deep-aqua;
+
+    margin-top: 12px;
+  }
+  
+  
+}
+
+@media (min-width: 600px) {
+  
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+
+@media (max-width: 480px) {
+
+   
+
+  
+}

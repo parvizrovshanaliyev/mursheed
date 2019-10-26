@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+// 
+:root {
+  --dull-red: #b73838;
+  --black: #000000;
+  --dusty-orange: #f68135;
+  --warm-grey: #999999;
+}
+
+@font-face {
+  font-family: "Averta-Regular";
+  src: local(Averta-Regular),
+    url(../font_faces/Averta-Regular.woff2) format("woff2"),
+    url(../font_faces/Averta-Regular.woff) format("woff"),
+    url(../font_faces/Averta-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Averta-Semibold";
+  src: local(Averta-Semibold),
+    url(../font_faces/Averta-Semibold.woff2) format("woff2"),
+    url(../font_faces/Averta-Semibold.woff) format("woff"),
+    url(../font_faces/Averta-Semibold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Averta-Bold";
+  src: local(Averta-Bold),
+    url(../font_faces/Averta-Bold.woff2) format("woff2"),
+    url(../font_faces/Averta-Bold.woff) format("woff"),
+    url(../font_faces/Averta-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.averta-regular {
+  font-family: "Averta-Regular";
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}

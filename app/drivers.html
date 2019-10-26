@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mursheed</title>
+
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place your kit's code here -->
+  <!-- <script src="scripts/fontawesome.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <!--header-->
+  <!--header-->
+  <!--region content-->
+  <section class="content">
+    <div class="container">
+      <!--#region current-page-->
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="current-page">
+            <ul class="align-items-center pb-3 pt-3">
+              <li class="mr-2"><a class="home" href="#">Home</a></li>
+              <li class="mr-2">
+                <span class="arrow-right"><i class="material-icons ">keyboard_arrow_right</i></span>
+              </li>
+              <li><a class="secondNav" href="#">Guides & Drivers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--#endregion current-page-->
+      <div class="row">
+        <!--#region left-area filter sideBar-->
+        <div class="col-lg-3">
+          <div class="row no-gutters">
+            <div class="col-lg-12">
+              <!-- radio button -->
+              <div class="radio-button-area mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="radio-group">
+                      <div class="radio-group">
+                        <form>
+                          <ul>
+                            <li><label class="radio">
+                                <input type="radio" id="driver" value="driver" name="optradio" checked>Driver
+                                <span></span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="radio">
+                                <input type="radio" id="guides" value="guides" name="optradio" >Guides
+                                <span></span>
+                              </label>
+                            </li>
+                          </ul>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- radio button -->
+              <!-- filter form -->
+              <div class="filter-form mb-4">
+                <div class="card border-0">
+                  <form action="">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                      <h4 class="title">Filter</h4>
+                      <a href="#" class="reset">reset</a>
+                    </div>
+                    <div class="card-body">
+                      <div class="guides-select-form">
+                        <ul>
+                          <!-- select2 by city -->
+                          <li>
+                            <div class="select-area pb-3">
+                              <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                <h5>By city</h5>
+                                <h5><img class="pb-1" src="images/ico_guides/minus.svg" alt="" srcset=""></h5>
+                              </div>
+                              <div class="custom-select__filter-sidebar">
+                                <select class="select2-custom" data-width="100%"
+                                  data-minimum-results-for-search="Infinity" name="" id="">
+                                  <option value="">All city</option>
+                                  <option value="">Filter 1</option>
+                                  <option value="">Filter 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- select2 -->
+
+                          <!-- select2 by car -->
+                          <li>
+                                <div class="select-area pb-3">
+                                  <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                    <h5>By Car</h5>
+                                    <h5><img class="pb-1" src="images/ico_guides/minus.svg" alt="" srcset=""></h5>
+                                  </div>
+                                  <div class="custom-select__filter-sidebar mb-2">
+                                    <select class="select2-custom" data-width="100%"
+                                      data-minimum-results-for-search="Infinity" name="" id="">
+                                      <option value="">All types</option>
+                                      <option value="">Filter 1</option>
+                                      <option value="">Filter 2</option>
+                                    </select>
+                                  </div>
+                                  <div class="custom-select__filter-sidebar">
+                                    <select class="select2-custom" data-width="100%"
+                                      data-minimum-results-for-search="Infinity" name="" id="">
+                                      <option value="">All cars</option>
+                                      <option value="">Filter 1</option>
+                                      <option value="">Filter 2</option>
+                                    </select>
+                                  </div>
+                                  <div class="custom-select__filter-sidebar mt-2">
+                                    <select class="select2-custom" data-width="100%"
+                                      data-minimum-results-for-search="Infinity" name="" id="">
+                                      <option value="">All models</option>
+                                      <option value="">Filter 1</option>
+                                      <option value="">Filter 2</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </li>
+                              <!-- select2 -->
+
+                          <!-- by language -->
+                          <li>
+                            <div class="select-area pb-3">
+                              <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                <h5>By language</h5>
+                                <h5><img class="pb-1" src="images/ico_guides/minus.svg" alt="" srcset=""></h5>
+                              </div>
+                              <div class="custom-select__filter-sidebar">
+                                <select class="select2-custom" data-width="100%"
+                                  data-minimum-results-for-search="Infinity" name="" id="">
+                                  <option value="">All Language</option>
+                                  <option value="">Filter 1</option>
+                                  <option value="">Filter 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- by language -->
+
+                          <!-- by gender -->
+                          <li>
+                            <div class="select-area pb-3">
+                              <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                <h5>By gender</h5>
+                                <h5><img class="pb-1" src="images/ico_guides/minus.svg" alt="" srcset=""></h5>
+                              </div>
+                              <div class="custom-select__filter-sidebar">
+                                <select class="select2-custom" data-width="100%"
+                                  data-minimum-results-for-search="Infinity" name="" id="">
+                                  <option value="">All gender</option>
+                                  <option value="">Filter 1</option>
+                                  <option value="">Filter 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- by gender -->
+                          <!-- by gender -->
+                          <li>
+                            <div class="select-area pb-3">
+                              <div class="pb-2 select-title align-items-center d-flex justify-content-between">
+                                <h5>By availability</h5>
+                                <h5><img class="pb-1" src="images/ico_guides/minus.svg" alt="" srcset=""></h5>
+                              </div>
+                              <div class="custom-select__filter-sidebar">
+                                <select class="select2-custom" data-width="100%"
+                                  data-minimum-results-for-search="Infinity" name="" id="">
+                                  <option value="">All</option>
+                                  <option value="">Filter 1</option>
+                                  <option value="">Filter 2</option>
+                                </select>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- by gender -->
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- filter form -->
+            </div>
+          </div>
+        </div>
+        <!--#endregion left-area filter sideBar-->
+        <!--#region right-area table-->
+        <div class="col-lg-9">
+          <div class="row no-gutters">
+            <div class="col-lg-12">
+              <div class="card right-area-table">
+                <div class="card-header align-items-center card-header d-flex justify-content-between">
+                  <h4 class="card-header__title"> Drivers (89)</h4>
+                  <div class="custom-select__filter-table">
+                    <select name="" id="">
+                      <option value="">Filter</option>
+                      <option value="">Filter 1</option>
+                      <option value="">Filter 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-body border-0">
+                  <div class="table-container">
+                    <table class="table">
+                      <tbody>
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-md-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button d-flex">
+                                      <button class="mr-2 busy busy-or-avaiable"><span>Busy</span></button>
+                                      <!-- <span class="mr-2 user"><img src="images/ico_guides/user.svg" alt="" srcset=""></span> -->
+                                      <span class=" driver"><img src="images/ico_guides/driver.svg" alt=""
+                                          srcset=""></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-md-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-md-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button d-flex">
+                                      <button class="mr-2 avaiable busy-or-avaiable"><span>Avaiable</span></button>
+                                      <span class="mr-2 user"><img src="images/ico_guides/user.svg" alt=""
+                                          srcset=""></span>
+                                      <span class=" driver"><img src="images/ico_guides/driver.svg" alt=""
+                                          srcset=""></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-md-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-md-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button d-flex">
+                                      <button class="mr-2 busy busy-or-avaiable"><span>Busy</span></button>
+                                      <span class="mr-2 user"><img src="images/ico_guides/user.svg" alt=""
+                                          srcset=""></span>
+                                      <span class=" driver"><img src="images/ico_guides/driver.svg" alt=""
+                                          srcset=""></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-md-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area ">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-md-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button d-flex">
+                                      <button class="mr-2 avaiable busy-or-avaiable"><span>Avaiable</span></button>
+                                      <!-- <span class="mr-2 user"><img src="images/ico_guides/user.svg" alt=""
+                                                srcset=""></span> -->
+                                      <span class=" driver"><img src="images/ico_guides/driver.svg" alt=""
+                                          srcset=""></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-md-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+                        <!-- items -->
+                        <tr>
+                          <td>
+                            <div class="align-items-end no-gutters row">
+                              <div class="col-md-6 ">
+                                <div id="card_image_main_left" class="card">
+                                  <div class="card-image">
+                                    <img src="images/guides/g4.png" class="media-photo">
+                                  </div>
+                                  <!-- left area -->
+                                  <div class="card-main ">
+                                    <h4 class="title">Alexa Richardson</h4>
+                                    <span class="times-tour">120 times tour</span>
+                                    <p class="countries">English, Spain, Turkey, Azerbaijani</p>
+                                    <!-- busy or avaiable buttons -->
+                                    <div class="busy-avaiable-button d-flex">
+                                      <button class="mr-2 avaiable busy-or-avaiable"><span>Avaiable</span></button>
+                                      <span class="mr-2 user"><img src="images/ico_guides/user.svg" alt=""
+                                          srcset=""></span>
+                                      <span class=" driver"><img src="images/ico_guides/driver.svg" alt=""
+                                          srcset=""></span>
+                                    </div>
+                                    <!-- busy or avaiable buttons -->
+                                  </div>
+                                  <!-- left area -->
+                                </div>
+                              </div>
+                              <div class="col-md-6 ">
+                                <div id="card_star_details_hire" class="card card-right-area">
+                                  <!-- right area -->
+                                  <!-- ratings -->
+                                  <div class="rating">
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings"><img src="./images/ico_guides/star.svg" alt="star"
+                                        srcset=""></span>
+                                    <span class="ratings-count">(23)</span>
+                                  </div>
+                                  <!-- ratings -->
+                                  <div class="card-button">
+                                    <button class="details__hire details">Details</button>
+                                    <button class="details__hire hire">Hire</button>
+                                  </div>
+                                  <!-- right area -->
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- items -->
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+              <div class="justify-content-end no-gutters row">
+                <div class="pull-right">
+                  <div class="btn-group">
+                    <button type="button" class="btn  btn-filter" data-target="left"><img
+                        src="./images/ico_guides/pagination_arrow_left.svg" alt=""></button>
+                    <button type="button" class="btn  btn-filter" data-target="1">1</button>
+                    <button type="button" class="btn  btn-filter" data-target="2">2</button>
+                    <button type="button" class="btn  btn-filter" data-target="3">3</button>
+                    <button type="button" class="btn  btn-filter" data-target="4">4</button>
+                    <button type="button" class="btn  btn-filter" data-target="5">...</button>
+                    <button type="button" class="btn  btn-filter" data-target="8">8</button>
+                    <button type="button" class="btn  btn-filter" data-target="right"><img
+                        src="./images/ico_guides/pagination_arrow_right.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--#endregion right-area table-->
+      </div>
+    </div>
+  </section>
+  <!--#endregion content-->
+  <!--footer-->
+  <footer>
+
+  </footer>
+  <!--footer-->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function () {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- select2 -->
+  <script src="../bower_components/select2/dist/js/select2.min.js"></script>
+  <script src="scripts/custom_select.js"></script>
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

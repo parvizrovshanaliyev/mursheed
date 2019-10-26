@@ -1,0 +1,486 @@
+@import './_select2';
+
+.content {
+
+  a {
+    text-decoration: none;
+  }
+
+  width: 100%;
+
+  .current-page {
+
+    ul {
+      display: flex;
+
+      .home {
+        width: 2.8125rem;
+        height: $font-size2;
+        font-family: "Averta-Regular";
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #999999;
+      }
+
+      .arrow-right {
+        object-fit: contain;
+        color: #999999;
+        
+      }
+      .material-icons{
+        font-size: 1rem;
+      }
+
+      .secondNav {
+        width: 7.625rem;
+        height: $font-size2;
+         font-family: "Averta-Regular";
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $deep-aqua;
+      }
+
+    }
+
+
+  }
+
+  //   content
+
+  //   left filter sidebar
+  .radio-button-area {
+    .card {
+      border: 1px solid $deep-aqua;
+      width: 100%;
+      height: 100%;
+      border-radius: $border-radius4px;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #ffffff;
+
+      .card-body {
+        .radio-group {
+          form {
+            ul {
+              li {
+                .radio {
+                  font-size: 1rem;
+                  line-height: 1;
+                  font-weight: 500;
+                  text-transform: capitalize;
+                  display: inline-block;
+                  vertical-align: middle;
+                  color: $black;
+                  position: relative;
+                  padding-left: 1.875rem;
+                  cursor: pointer;
+                }
+
+                .radio+.radio {
+                  margin-left: $font-size2;
+                }
+
+                .radio input[type="radio"] {
+                  display: none;
+                }
+
+                .radio span {
+                  height: 1rem;
+                  width: 1rem;
+                  border-radius: 50%;
+                  border: 1px solid $deep-aqua;
+                  display: block;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                }
+
+                .radio span:after {
+                  content: "";
+                  height: 0.625rem;
+                  width: 0.625rem;
+                  background: $deep-aqua;
+                  display: block;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%) scale(0);
+                  border-radius: 50%;
+                  transition: 300ms ease-in-out 0s;
+
+                }
+
+                .radio input[type="radio"]:checked~span:after {
+                  transform: translate(-50%, -50%) scale(1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .filter-form {
+
+    .card {
+      background-color: $light;
+      // width: 16.4375rem;
+      // height: 40.870rem;
+      border-radius:$border-radius4px;
+
+      form {
+
+        .card-header {
+          background-color: $light;
+
+          .title {
+            width: 2.9375rem;
+            height: 1.5rem;
+            font-family: "Averta-Regular";
+            font-size: $font-size2;
+            
+            color: $black;
+          }
+
+          .reset {
+            width: 2.25rem;
+            height: 1rem;
+            font-family:"Averta-Regular";
+            font-size: $font-size;
+            text-align: right;
+            color: $deep-aqua;
+          }
+        }
+
+        .card-body {
+
+          .guides-select-form {
+
+            ul {
+
+              li {
+
+                margin-bottom: 1rem !important;
+
+                .select-area {
+                  border-bottom: $border1px solid #dee2e6 !important;
+
+                  .select-title h5:first-child {
+                    height: 1.5rem;
+                    font-family: "Averta-Regular";
+                    font-size: 1rem;
+                    line-height: 1.25;
+                    color: $black;
+                  }
+
+                  .select-title h5:last-child {
+                    color: $deep-aqua;
+                  }
+                }
+
+                // filter custom select
+
+                .custom-select__filter-sidebar {
+                  width: 100%;
+                  height: 2.25rem;
+                  border-radius: 0.25rem;
+                  border: solid $border1px #dfdfdf;
+                  position: relative;
+
+                  select {
+                    outline: none;
+                    width: 100%;
+                    height: 100%;
+                    border: 0;
+                    background: transparent;
+                    font-family: "Averta-Regular";
+                    font-size: 12px;
+                    padding: .25rem !important;
+                    color: #666666;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                  }
+                }
+
+                .custom-select__filter-sidebar:after {
+                  content: "keyboard_arrow_down";
+                  font-family: "material icons";
+                  position: absolute;
+                  right: 0.625rem;
+                  top: 50%;
+                  font-size: 1rem;
+                  color: #000000;
+                  transform: translateY(-50%);
+                  pointer-events: none;
+                }
+
+
+
+
+              }
+            }
+
+            ul li:last-child .select-area {
+              border-bottom: $border1px solid transparent !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+
+  //   right table
+  .card.right-area-table{
+    
+    border: 0!important;
+    height: min-content;
+    background-color: $light;
+    margin-bottom: 1rem!important;
+
+    .card-header {
+
+      background-color: $light;
+
+      &__title {
+        // width: 6.1875rem;
+        // height: 1.5rem;
+        font-family: "Averta-Regular";
+        font-size: $font-size2;
+
+        
+      }
+      
+
+      // custom select
+      .custom-select__filter-table {
+        width: 10rem;
+        height: 2.25rem;
+        border-radius: 0.25rem;
+        border: solid $border1px #dfdfdf;
+        padding: .25rem !important;
+        position: relative;
+
+        select {
+          outline: none;
+          width: 100%;
+          height: 100%;
+          border: 0;
+          background: transparent;
+          font-family: "Averta-Regular";
+          font-size: 1rem;
+          padding: .25rem !important;
+          color: #666666;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+      }
+
+      .custom-select__filter-table:after {
+        content: "keyboard_arrow_down";
+        font-family: "material icons";
+        position: absolute;
+        right: 0.625rem;
+        top: 50%;
+        font-size: 1rem;
+        color: #000000;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+
+    }
+
+    .card-body {
+
+      .table-container{
+
+        height: 100%;
+        .table{
+          // tbody
+          tbody {
+            tr {
+              td {
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 1rem;
+                border: 0;
+                border-bottom: solid 1px #dfdfdf;
+                .card{
+
+                  background: transparent;
+                  border: 0;
+                  display: flex;
+                  flex-direction: column;
+                  text-align: center;
+
+                  .card-image > img{
+                    width: 6.375rem;
+                    height: 6.375rem;
+                  }
+
+                  .card-main{
+
+                    
+
+                    .title{
+                      padding-top: 5px;
+                      font-family: "Averta-Semibold";
+                      font-size: 1rem;
+                      font-weight: 600;
+                      color: var(--black);
+                    }
+                    
+                    .times-tour {
+                      font-family: "Averta-Regular";
+                      font-size: $font-size - 0.3;
+                      line-height: 1.25;
+                      letter-spacing: normal;
+                      color: var(--black);
+                    }
+
+                    .countries {
+                      font-family: "Averta-Regular";
+                      font-size: $font-size - 0.1;
+                      line-height: 2;
+                      letter-spacing: normal;
+                      color: var(--black);
+                    }
+
+                    // .busy-avaiable-button {
+                    //   line-height: 2.3rem !important
+                    // }
+
+                    .busy-or-avaiable {
+                      border: 0;
+                      border-radius: 2px;
+                      color: #ffffff;
+                      text-align: center!important;
+                      width: 70px;
+                      height: 20px;
+                      font-family: "Averta-Regular";
+                      font-size: 10px;
+                      outline: none;
+                    }
+
+                    .busy {
+                      background-color: #b73838;
+                    }
+
+                    .avaiable {
+                      background-color: #38b77b;
+                    }
+
+                    .user {
+                      width: 17px;
+                      height: 20px;
+                      object-fit: contain;
+                      position: relative;
+                      display: flex;
+                    }
+                    // .user:after{
+                    //   content: url(../../../images/ico_guides/user.svg);
+                    //   position: absolute;
+                    //   margin-left: 1rem;
+                    // }
+
+                  }
+                  
+                }
+  
+                .card.card-right-area{
+
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  background: transparent;
+                  border: 0;
+
+                  .ratings {
+                    font-size: 12px;
+                  }
+
+                  .ratings-count {
+                    font-size: 10px;
+                  }
+
+                  .card-button{
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: space-around;
+                    .details__hire {
+                      font-size: 0.9rem;
+                      font-weight: 300;
+                      text-align: center;
+                      font-family: "Averta-Bold";
+                      border: 0;
+                      border-radius: 3px;
+                      margin-right: 2px;
+                    }
+  
+                    .details {
+                      color: $deep-aqua;
+                      background-color: #ffffff;
+                      border: 1px solid;
+                    }
+  
+                    .hire {
+                      color: #ffffff;
+                      background-color: $deep-aqua;
+  
+                    }
+                  }
+                }
+               
+              }
+            }
+          }
+  
+          tbody>tr:last-child>td  {
+            border-bottom: $border1px solid transparent !important;
+          }
+        }
+        
+      }
+
+    }
+
+
+  }
+
+  // pagination
+  .pull-right {
+    .btn-group {
+      width: 15.5rem;
+      height: 1.875rem;
+      border-radius: 0.1875rem;
+      //   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+      background-color: $light;
+
+      .btn.btn-filter {
+        width: 1.875rem;
+        height: 1.875rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-align: center;
+        color: $black;
+        border-right: $border1px #e1e1e1;
+        outline: none;
+        color: #9d9b9b;
+      }
+    }
+  }
+
+  
+
+}
